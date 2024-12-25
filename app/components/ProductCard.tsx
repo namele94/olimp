@@ -11,6 +11,7 @@ import COLORS from '../styles/colors.ts';
 import {useStore} from '../stores/StoreContext.tsx';
 import CounterButton from './CounterButton.tsx';
 import FastImage from 'react-native-fast-image';
+import {observer} from 'mobx-react';
 
 const ProductCard = ({item}: {item: Product}) => {
   const {productStore} = useStore();
@@ -107,4 +108,4 @@ const styles = StyleSheet.create({
   nameContainer: {},
 });
 
-export default ProductCard;
+export default observer(ProductCard);

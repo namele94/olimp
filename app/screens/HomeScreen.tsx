@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     resizeMode: 'contain',
-    paddingLeft: 10,
+    marginLeft: 10,
   },
   cartBtnContainer: {
     flexDirection: 'row',
